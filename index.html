@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carpentary Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: linear-gradient(135deg, rgba(74,144,226,0.9), rgba(80,227,194,0.9));
+      color: #000;
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 5px solid #fff;
+    }
+
+    .banner h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .banner h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .commitments {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .commitments span {
+      background: rgba(255,255,255,0.2);
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .commitments span:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    /* Services Section */
+    .services-container {
+      max-width: 1000px;
+      margin: -40px auto 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Completed Work Section */
+    .completed-work {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .completed-work h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .completed-work p {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+
+    .work-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .work-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .work-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      text-align: center;
+      margin: 50px 20px;
+    }
+
+    .contact-section a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #4a90e2;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .contact-section a:hover {
+      background-color: #50e3c2;
+    }
+
+    .areas {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    @media(max-width: 600px) {
+      .banner h1 { font-size: 36px; }
+      .banner h2 { font-size: 22px; }
+      .completed-work h2 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <h1>Expert Carpentary Service</h1>
+    <h2>Expert in Wardrobes, Modular Kitchens, TV Units, Pooja Units, Beds & Custom Designs</h2>
+    <div class="commitments">
+      <span>Lowest Price</span>
+      <span>Timely Work</span>
+      <span>Full Transparency</span>
+      <span>High-Class Finishing</span>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="services-container">
+    <div class="service-card">
+      <h3>Wardrobe</h3>
+      <p>Customized wardrobes tailored to your style and space.</p>
+    </div>
+    <div class="service-card">
+      <h3>Modular Kitchen</h3>
+      <p>High-quality modular kitchens with premium finishes.</p>
+    </div>
+    <div class="service-card">
+      <h3>TV Unit</h3>
+      <p>Modern TV units with smart storage and sleek design.</p>
+    </div>
+    <div class="service-card">
+      <h3>Pooja Unit</h3>
+      <p>Elegant and functional pooja units crafted with precision.</p>
+    </div>
+    <div class="service-card">
+      <h3>Bed</h3>
+      <p>Comfortable and stylish beds made for your lifestyle.</p>
+    </div>
+    <div class="service-card">
+      <h3>Other Customization</h3>
+      <p>Any carpentry design you imagine, we can bring to life.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <a href="tel:+917534094362">Call Now: +91-7534094362 (Mr. Javed)</a>
+    <div class="areas">
+      Areas Served(Chennai): Kelambakkam, Padur, Navlur, Mambakkam, Thiruporur, Vandalur, Tambaram
+    </div>
+  </div>
+
+    <!-- Completed Work Section -->
+  <div class="completed-work">
+    <h2>Our Completed Work</h2>
+    <p>Take a look at some of our beautifully finished projects below:</p>
+    <div class="work-gallery">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=600&q=80" alt="Wardrobe project">
+      <img src="https://images.unsplash.com/photo-1600585154208-0d9a1f7d0f90?auto=format&fit=crop&w=600&q=80" alt="Modular kitchen">
+      <img src="https://images.unsplash.com/photo-1588854337221-4f45f3f88a2b?auto=format&fit=crop&w=600&q=80" alt="TV unit design">
+      <img src="https://images.unsplash.com/photo-1627634777218-6ed51d35d55b?auto=format&fit=crop&w=600&q=80" alt="Custom furniture">
+    </div>
+  </div>
+
+</body>
+</html>

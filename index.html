@@ -269,6 +269,49 @@
     </div>
   </details>
 </div>
+  <style>
+.completed-work {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+  font-family: Arial, sans-serif;
+}
+
+.completed-work details {
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 10px;
+}
+
+.completed-work summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.completed-work .work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.completed-work .work-gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.completed-work .work-gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
 
 </body>
 </html>
